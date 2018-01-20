@@ -2,8 +2,8 @@
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/zEig29HrXXTTPEH8HY8Qmk5p/maximegris/angular-electron.svg' />
 </a>
 
-[![Angular Logo](./logo-angular.jpg)](https://angular.io/) [![Electron Logo](./logo-electron.jpg)](https://electron.atom.io/)
-
+<a href='https://angular.io/'><img src='./logo-angular.jpg' width='75' alt='Angular Logo'></a>
+<a href='https://electron.atom.io/'><img src='./logo-electron.jpg' alt='Electron Logo'></a>
 
 [![Travis Build Status][build-badge]][build]
 [![Dependencies Status][dependencyci-badge]][dependencyci]
@@ -20,10 +20,10 @@ Bootstrap and package your project with Angular 5(+) and Electron (Typescript + 
 
 Currently runs with:
 
-- Angular v5.0.1
-- Angular-CLI v1.5.0
-- Electron v1.7.6
-- Electron Packager v9.0.1
+- Angular v5.2.0
+- Angular-CLI v1.6.4
+- Electron v1.7.8
+- Electron Builder v19.45.4
 
 With this sample, you can :
 
@@ -75,7 +75,7 @@ Your built files are in the /dist folder.
 
 |Command|Description|
 |--|--|
-|`npm run start:web`| Execute the app in the brower |
+|`npm run start:web`| Execute the app in the browser |
 |`npm run electron:linux`| Builds your application and creates an app consumable on linux system |
 |`npm run electron:windows`| On a Windows OS, builds your application and creates an app consumable in windows 32/64 bit systems |
 |`npm run electron:mac`|  On a MAC OS, builds your application and generates a `.app` file of your application that can be run on Mac |
