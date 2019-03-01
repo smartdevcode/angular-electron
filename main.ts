@@ -16,10 +16,7 @@ function createWindow() {
     x: 0,
     y: 0,
     width: size.width,
-    height: size.height,
-    webPreferences: {
-      nodeIntegration: true,
-    },
+    height: size.height
   });
 
   if (serve) {
