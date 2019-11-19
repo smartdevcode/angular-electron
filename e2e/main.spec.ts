@@ -1,4 +1,4 @@
-import {expect} from 'chai';
+import {expect, assert} from 'chai';
 import {SpectronClient} from 'spectron';
 
 import commonSetup from './common-setup';
@@ -6,13 +6,11 @@ import commonSetup from './common-setup';
 describe('angular-electron App', function () {
   commonSetup.apply(this);
 
-  /* eslint "@typescript-eslint/no-explicit-any": 0 */
   let browser: any;
   let client: SpectronClient;
 
   beforeEach(function () {
     client = this.app.client;
-    /* eslint "@typescript-eslint/no-explicit-any": 0 */
     browser = client as any;
   });
 

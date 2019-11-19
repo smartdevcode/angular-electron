@@ -2,11 +2,11 @@ import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 
-let win: BrowserWindow = null;
-const args = process.argv.slice(1),
-    serve = args.some(val => val === '--serve');
+let win, serve;
+const args = process.argv.slice(1);
+serve = args.some(val => val === '--serve');
 
-function createWindow(): BrowserWindow {
+function createWindow() {
 
   const electronScreen = screen;
   const size = electronScreen.getPrimaryDisplay().workAreaSize;
@@ -19,12 +19,10 @@ function createWindow(): BrowserWindow {
     height: size.height,
     webPreferences: {
       nodeIntegration: true,
-      allowRunningInsecureContent: (serve) ? true : false,
     },
   });
 
   if (serve) {
-    /* eslint "@typescript-eslint/no-var-requires": 0 */
     require('electron-reload')(__dirname, {
       electron: require(`${__dirname}/node_modules/electron`)
     });
@@ -49,7 +47,6 @@ function createWindow(): BrowserWindow {
     win = null;
   });
 
-  return win;
 }
 
 try {

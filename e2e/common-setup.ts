@@ -1,11 +1,8 @@
-/* eslint "@typescript-eslint/no-var-requires": 0 */
 const Application = require('spectron').Application;
-/* eslint "@typescript-eslint/no-var-requires": 0 */
 const electronPath = require('electron'); // Require Electron from the binaries included in node_modules.
-/* eslint "@typescript-eslint/no-var-requires": 0 */
 const path = require('path');
 
-export default function setup(): void {
+export default function setup() {
   beforeEach(async function () {
     this.app = new Application({
       // Your electron path can be any binary
