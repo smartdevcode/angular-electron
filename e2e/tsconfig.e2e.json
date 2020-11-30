@@ -3,12 +3,10 @@
   "compilerOptions": {
     "outDir": "../out-tsc/e2e",
     "module": "commonjs",
-    "types": [
-      "mocha",
+    "target": "es5",
+    "types":[
+      "jasmine",
       "node"
     ]
-  },
-  "include": [
-    "**.ts"
-  ]
+  }
 }

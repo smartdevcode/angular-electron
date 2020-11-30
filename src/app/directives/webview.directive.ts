@@ -4,5 +4,7 @@ import { Directive } from '@angular/core';
   selector: 'webview'
 })
 export class WebviewDirective {
+
   constructor() { }
+
 }
